@@ -1,0 +1,113 @@
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 60px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.heading{
+    
+    position: absolute;
+    color: white;
+    
+    /* transform: translateY(-100px)  ; */
+    top: 5rem;
+    font-size:70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    text-shadow:white right 10px;
+    
+}
+
+.pl{
+    overflow-x: auto;
+    transform: translate3d(1300px,30px,-100px) scaleZ(-190) ;
+    
+}
+
+.background{
+    transform: translateZ(-100px) scale(3) ;
+}
+.fore{
+    transform: translateZ(-20px)scale(1.5) ;
+    
+}
+
+.background,.fore,.pl
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+} 
+
+
+
+#header{
+    font-size: 5rem;
+    padding:0 10rem;
+    
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 3rem;
+    margin: 2rem 0;
+}
+.container2{
+    background-color: rgb(55, 33, 33);
+    color: white;
+    
+    /* position: relative;
+    display: flex;
+    flex-direction: column; */
+    
+    padding: 3rem 0;
+  
+   
+   
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color:white;
+    
+    background-size:cover;
+    color: black;
+    font-size:3.5rem;
+    top: 50%;
+    right: 40%;
+}
+.bg0{
+    background-image: url(adventure.jpg);
+}
+.bg1{
+  background-image: url(deepsea.jpeg);
+}
+.bg2{
+  background-image: url(znmd.webp);
+}
+.bg3{
+  background-image: url(bull.webp);
+}
